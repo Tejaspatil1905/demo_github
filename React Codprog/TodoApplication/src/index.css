@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0rem;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(142, 149, 173);
+  color: #efefef;
+}
+button,input{
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.container{
+  max-width: 900px;
+  width: 95%;
+  margin: auto;
+  margin-top: 32px;
+  /* border: 1px solid white; */
+}
+.todoForm{
+  border: 2px solid rebeccapurple;
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  width: 90%;
+  align-items: center;
+  height: 54px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0px 1rem;
+  margin-top: 12px;
+}
+.todoForm-input{
+  border: none;
+  outline: none;
+  background-color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  height: 100%;
+}
+.todoForm-btn{
+  outline: none;
+  border: none;
+  background-color: rgb(41, 6, 61);
+  color: white;
+  padding: 0.4rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.todo{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  width: 89%;
+}
+
+.todo-title{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+}
+.todo-title p{
+  font-size: 1.2rem;
+}
+
+input[type="checkbox"]{
+  height: 32px;
+  width: 32px;
+  accent-color: white;
+}
+.cross-line{
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.completed{
+  text-decoration: line-through;
+  opacity: 0.8;
+}
